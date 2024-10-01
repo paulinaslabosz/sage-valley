@@ -17,6 +17,13 @@
   min-height: 100vh;
 }
 
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 main {
   flex-grow: 1;
 }

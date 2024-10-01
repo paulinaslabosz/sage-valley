@@ -1,0 +1,19 @@
+.nav {
+  &_img {
+    height: 100%;
+  }
+  &_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+    li {
+      padding: 12px 18px;
+      font-weight: bold;
+      &:hover {
+        background-color: var(--lightSage);
+        border-radius: 20%;
+      }
+    }
+  }
+}
