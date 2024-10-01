@@ -8,6 +8,9 @@ function Header() {
       <video muted autoPlay={'autoplay'} preLoad='auto' loop>
         <source src={video} type='video/mp4' />
       </video>
+      <div className='header_text'>
+        <p>Welcome to Sage Valley</p>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,20 @@
-.header_wrapper {
-  height: 70vh;
+.header {
+  &_wrapper {
+    height: 70vh;
+    position: relative;
+  }
+  &_text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--lightSage);
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    > p {
+      font-size: 3.5rem;
+    }
+  }
 }
 video {
   width: 100%;
