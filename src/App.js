@@ -1,5 +1,6 @@
 import './App.css';
 import Nav from './layout/Nav';
+import Homepage from './pages/homepage/Homepage.js';
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
         <Nav />
       </nav>
 
-      <main>home page</main>
+      <main>
+        <Homepage />
+      </main>
       <footer>footer</footer>
     </div>
   );
