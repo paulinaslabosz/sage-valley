@@ -1,10 +1,14 @@
 .cabins {
   &_wrapper {
+    h1 {
+      text-align: center;
+    }
+  }
+  &_content {
     display: flex;
     justify-content: space-around;
   }
   &_cabin {
-    background-color: rebeccapurple;
     width: 40%;
     position: relative;
     img {
@@ -25,13 +29,14 @@
     a {
       opacity: 0.7;
       font-size: 1.5rem;
-      background-color: var(--darkGreen);
+      border: 1px solid var(--lightSage);
       font-weight: bold;
       text-decoration: none;
       color: var(--lightSage);
-      padding: 10px;
+      padding: 10px 22px;
+      transition: all 0.5s ease;
       &:hover {
-        background-color: var(--sage);
+        background-color: var(--lightSage);
         color: var(--darkGreen);
       }
     }
