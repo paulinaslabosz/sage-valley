@@ -1,10 +1,13 @@
 import React from 'react';
+import intimacyImg from '../../../images/intimacy.jpg';
+import peaceImg from '../../../images/peace.jpg';
+
 function Content() {
   return (
     <div>
       <div>
         <div>
-          <img src='' alt='' />
+          <img src={peaceImg} alt='Cabin photo with lake' />
           <p>Peace</p>
         </div>
         <div>
@@ -19,7 +22,7 @@ function Content() {
       </div>
       <div>
         <div>
-          <img src='' alt='' />
+          <img src={intimacyImg} alt='Cabin photo at night' />
           <p>Intimacy</p>
         </div>
         <div>
