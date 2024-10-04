@@ -2,7 +2,6 @@ import React from 'react';
 import './styles/Content.scss';
 import intimacyImg from '../../../images/intimacy.jpg';
 import peaceImg from '../../../images/peace.jpg';
-
 function Content() {
   return (
     <div className='content_wrapper'>
