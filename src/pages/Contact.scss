@@ -15,6 +15,15 @@ h2 {
         font-size: 1.7rem;
         display: flex;
         align-items: center;
+        position: relative;
+        &:before {
+          content: '';
+          height: 1px;
+          width: 130%;
+          position: absolute;
+          bottom: 0;
+          background-color: var(--sage);
+        }
         > *:first-child {
           color: var(--sage);
           font-size: 2rem;
