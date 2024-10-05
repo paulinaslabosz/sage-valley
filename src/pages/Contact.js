@@ -1,4 +1,5 @@
 import React from 'react';
+import contactImg from '../images/contact.jpeg';
 
 function Contact() {
   return (
@@ -18,7 +19,7 @@ function Contact() {
           </li>
         </ul>
         <div>
-          <img src='' alt='' />
+          <img src={contactImg} alt='Window seat with pillows and books' />
         </div>
       </div>
     </>
