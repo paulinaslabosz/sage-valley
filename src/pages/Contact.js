@@ -1,6 +1,12 @@
 import React from 'react';
 import './Contact.scss';
 import contactImg from '../images/contact.jpeg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLocationDot,
+  faPhone,
+  faAt,
+} from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
   return (
@@ -9,13 +15,15 @@ function Contact() {
       <div className='contact_wrapper'>
         <ul>
           <li>
+            <FontAwesomeIcon icon={faLocationDot} />
             <p>23 Street, 00-000 City</p>
           </li>
           <li>
+            <FontAwesomeIcon icon={faPhone} />
             <p>+00 123 45 67</p>
           </li>
           <li>
-            {' '}
+            <FontAwesomeIcon icon={faAt} />
             <p>name@email.com</p>
           </li>
         </ul>
