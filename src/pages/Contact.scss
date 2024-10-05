@@ -1,6 +1,6 @@
 h2 {
   color: var(--sage);
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -10,6 +10,20 @@ h2 {
     justify-content: space-around;
     ul {
       list-style: none;
+      padding: 2rem;
+      li {
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+        > *:first-child {
+          color: var(--sage);
+          font-size: 2rem;
+        }
+
+        p {
+          padding-left: 1.5rem;
+        }
+      }
     }
   }
   &_imgWrapper {
