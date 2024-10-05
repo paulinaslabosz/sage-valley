@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from './layout/Nav';
 import Homepage from './pages/homepage/Homepage.js';
-
+import Contact from './pages/Contact.js';
 function App() {
   return (
     <div className='App'>
@@ -10,7 +10,8 @@ function App() {
       </nav>
 
       <main>
-        <Homepage />
+        {/* <Homepage /> */}
+        <Contact />
       </main>
       <footer>footer</footer>
     </div>
