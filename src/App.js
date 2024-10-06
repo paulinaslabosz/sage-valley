@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './layout/Nav';
 import Homepage from './pages/homepage/Homepage.js';
 import Contact from './pages/Contact.js';
+import BigCabin from './pages/BigCabin.js';
+import LittleCabin from './pages/LittleCabin.js';
+import Attractions from './pages/Attractions.js';
 function App() {
   return (
     <BrowserRouter>
@@ -14,9 +17,9 @@ function App() {
         <main>
           <Routes>
             <Route path='/' element={<Homepage />} />
-            <Route path='bigCabin' element={<Homepage />} />
-            <Route path='littleCabin' element={<Homepage />} />
-            <Route path='attractions' element={<Homepage />} />
+            <Route path='bigCabin' element={<BigCabin />} />
+            <Route path='littleCabin' element={<LittleCabin />} />
+            <Route path='attractions' element={<Attractions />} />
             <Route path='contact' element={<Contact />} />
           </Routes>
         </main>
