@@ -18,10 +18,16 @@
 }
 
 nav {
-  height: 10vh;
+  height: 4rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+z-index: 100;
+background-color: white;
+opacity: .9;
 }
 
 main {
