@@ -1,10 +1,9 @@
-h2 {
-  color: var(--sage);
-  font-size: 3rem;
-  text-align: center;
-}
-
 .contact {
+  &_title {
+    color: var(--sage);
+    font-size: 3rem;
+    text-align: center;
+  }
   &_wrapper {
     display: flex;
     justify-content: space-around;

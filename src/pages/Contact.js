@@ -8,13 +8,12 @@ import {
   faLocationDot,
   faPhone,
   faAt,
-  faFacebook,
 } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
   return (
     <>
-      <h2>Contact</h2>
+      <h2 className='contact_title'>Contact</h2>
       <div className='contact_wrapper'>
         <div>
           <ul>
@@ -34,10 +33,14 @@ function Contact() {
 
           <h3>Check our socials</h3>
           <div className='contact_socials'>
-            <a href='https://www.facebook.com/' target='_blank'>
+            <a
+              href='https://www.facebook.com/'
+              target='_blank'
+              rel='noreferrer'
+            >
               <img src={fbIcon} alt='Facebook icon' />
             </a>
-            <a href='https://instagram.com/' target='_blank'>
+            <a href='https://instagram.com/' target='_blank' rel='noreferrer'>
               <img src={igIcon} alt='Instagram icon' />
             </a>
           </div>

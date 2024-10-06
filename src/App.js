@@ -10,8 +10,8 @@ function App() {
       </nav>
 
       <main>
-        {/* <Homepage /> */}
-        <Contact />
+        <Homepage />
+        {/* <Contact /> */}
       </main>
       <footer>footer</footer>
     </div>
