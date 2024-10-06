@@ -43,4 +43,14 @@ h2 {
       object-fit: cover;
     }
   }
+  &_socials {
+    display: flex;
+    column-gap: 2rem;
+    a {
+      width: 3rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
