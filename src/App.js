@@ -1,20 +1,28 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './layout/Nav';
 import Homepage from './pages/homepage/Homepage.js';
 import Contact from './pages/Contact.js';
 function App() {
   return (
-    <div className='App'>
-      <nav>
-        <Nav />
-      </nav>
+    <BrowserRouter>
+      <div className='App'>
+        <nav>
+          <Nav />
+        </nav>
 
-      <main>
-        <Homepage />
-        {/* <Contact /> */}
-      </main>
-      <footer>footer</footer>
-    </div>
+        <main>
+          <Routes>
+            <Route path='/' element={<Homepage />} />
+            <Route path='bigCabin' element={<Homepage />} />
+            <Route path='littleCabin' element={<Homepage />} />
+            <Route path='attractions' element={<Homepage />} />
+            <Route path='contact' element={<Contact />} />
+          </Routes>
+        </main>
+        <footer>footer</footer>
+      </div>
+    </BrowserRouter>
   );
 }
 
