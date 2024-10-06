@@ -10,7 +10,7 @@ function Nav() {
         <li>Start</li>
         <li>Big Cabin</li>
         <li>Little Cabin</li>
-        <li>Attraction</li>
+        <li>Attractions</li>
         <li>Contact</li>
       </ul>
     </>
