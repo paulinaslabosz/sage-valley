@@ -1,16 +1,16 @@
 import React from 'react';
-
+import './Attractions.scss';
 function Attractions() {
   return (
     <>
-      <ul>
-        <li>BATHHOUSE</li>
+      <ul className='atr_nav'>
+        <li className='atr_navlink'>BATHHOUSE</li>
         <li>SAUNA</li>
         <li>MASSAGE</li>
         <li>FOOD</li>
         <li>GREEN</li>
       </ul>
-      <div>Tu treść</div>
+      <div className='atr_wrapper'>Tu treść</div>
     </>
   );
 }
