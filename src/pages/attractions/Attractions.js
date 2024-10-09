@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Section';
+import { Routes, Route } from 'react-router-dom';
 import './Attractions.scss';
 function Attractions() {
   return (
@@ -11,7 +12,11 @@ function Attractions() {
         <li className='atr_navlink'>FOOD</li>
         <li className='atr_navlink'>GREEN</li>
       </ul>
-      <div className='atr_content'>Tu treść</div>
+      <div className='atr_content'>
+        <Routes>
+          <Route path='/' element={<Section />} />
+        </Routes>
+      </div>
     </div>
   );
 }
