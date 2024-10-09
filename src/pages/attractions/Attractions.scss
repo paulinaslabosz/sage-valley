@@ -17,12 +17,19 @@
     color: var(--lightSage);
     font-weight: bold;
     letter-spacing: 2px;
+    text-decoration: none;
     &:hover {
       background-color: var(--lightSage);
       color: var(--sage);
       border: none;
       box-shadow: -1px -1px 1px #f9f9f9;
     }
+  }
+  &_active {
+    background-color: var(--lightSage);
+    color: var(--sage);
+    border: none;
+    box-shadow: -1px -1px 1px #f9f9f9;
   }
   &_content {
     margin-top: 0;
