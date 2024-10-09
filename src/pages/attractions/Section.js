@@ -1,8 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import './Section.scss';
 import tub from '../../images/attractions/hottub.jpg';
 
 function Section() {
+  const { id } = useParams();
+  console.log(id);
   return (
     <>
       <div className='section_wrapper'>

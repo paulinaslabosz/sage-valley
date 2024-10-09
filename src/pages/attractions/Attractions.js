@@ -70,6 +70,7 @@ function Attractions() {
       <div className='atr_content'>
         <Routes>
           <Route path='/' element={<Section />} />
+          <Route path='/:id' element={<Section />} />
         </Routes>
       </div>
     </div>
