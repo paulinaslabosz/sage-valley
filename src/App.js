@@ -5,7 +5,7 @@ import Homepage from './pages/homepage/Homepage.js';
 import Contact from './pages/Contact.js';
 import BigCabin from './pages/BigCabin.js';
 import LittleCabin from './pages/LittleCabin.js';
-import Attractions from './pages/Attractions.js';
+import Attractions from './pages//attractions/Attractions.js';
 function App() {
   return (
     <BrowserRouter>
