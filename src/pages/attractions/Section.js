@@ -5,12 +5,12 @@ import tub from '../../images/attractions/hottub.jpg';
 function Section() {
   return (
     <>
-      <div>
-        <div>
+      <div className='section_wrapper'>
+        <div className='section_img'>
           <img src={tub} alt='Girl in hot tub' />
         </div>
-        <div>
-          <h3>Hot Tub</h3>
+        <div className='section_content'>
+          <h3 className='section_title'>Hot Tub</h3>
           <p>
             Whether you're looking for a traditional wellness experience or a
             cozy getaway, this summer cottage with its authentic banya and hot
@@ -24,7 +24,7 @@ function Section() {
           </p>
         </div>
       </div>
-      <div></div>
+      <div className='section_corousel'></div>
     </>
   );
 }
