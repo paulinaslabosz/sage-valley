@@ -50,4 +50,11 @@
       background-color: var(--darkGreen);
     }
   }
+  &_corousel {
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    margin: 50px 0;
+    padding: 35px 0;
+  }
 }

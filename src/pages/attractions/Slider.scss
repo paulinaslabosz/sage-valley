@@ -1,0 +1,24 @@
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.atr_slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.slider-track {
+  display: inline-block;
+  height: 100%;
+  animation: 40s slider infinite linear;
+  img {
+    height: 100%;
+    margin: 0 5px;
+  }
+}
