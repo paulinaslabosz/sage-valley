@@ -4,7 +4,7 @@ export const attractions = [
     title: 'Hot Tub',
     content:
       "Whether you're looking for a traditional wellness experience or a cozy getaway, this summer cottage with its authentic banya and hot tub is the perfect destination for relaxation and rejuvenation.Heated to a soothing temperature, the hot tub provides a perfect escape to melt away stress, while surrounded by the fresh air and natural beauty of the countryside. The combination of warm water and the peaceful ambiance makes it the perfect spot for deep relaxation, whether during the day amidst the birdsong or at night under the stars.",
-    img: "'/images/attractions/hottub.jpg'",
+    img: '/images/attractions/hottub.jpg',
     slider: [
       <img src='/images/balia/bania1.jpg' alt='Bania' />,
       <img src='/images/balia/bania2.jpg' alt='Bania' />,
