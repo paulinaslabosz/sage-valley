@@ -2,7 +2,10 @@ import React from 'react';
 import Section from './Section';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import './Attractions.scss';
+import { attractions } from '../../attractionsData.js';
+
 function Attractions() {
+  console.log('test');
   return (
     <div className='atr_wrapper'>
       <ul className='atr_nav'>
@@ -69,8 +72,8 @@ function Attractions() {
       </ul>
       <div className='atr_content'>
         <Routes>
-          <Route path='/' element={<Section />} />
-          <Route path='/:id' element={<Section />} />
+          <Route path='/' element={<Section data={attractions} />} />
+          <Route path='/:id' element={<Section data={attractions} />} />
         </Routes>
       </div>
     </div>
