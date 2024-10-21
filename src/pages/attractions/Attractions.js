@@ -5,7 +5,6 @@ import './Attractions.scss';
 import { attractions } from '../../attractionsData.js';
 
 function Attractions() {
-  console.log('test');
   return (
     <div className='atr_wrapper'>
       <ul className='atr_nav'>

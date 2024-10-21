@@ -7,7 +7,6 @@ function Section({ data }) {
   const { id } = useParams();
   const currentSection = data.find((element) => element.name === id);
 
-  console.log(data);
   return (
     <>
       <div className='section_wrapper'>

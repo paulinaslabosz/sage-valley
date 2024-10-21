@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { cabinData } from '../cabinData';
 
-function BigCabin() {
+function Cabin() {
   const { id } = useParams();
   const currentCabin = cabinData.find((element) => element.name === id);
 
@@ -35,4 +35,4 @@ function BigCabin() {
   );
 }
 
-export default BigCabin;
+export default Cabin;
