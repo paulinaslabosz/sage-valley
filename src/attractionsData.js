@@ -35,11 +35,11 @@ export const attractions = [
       'Indulge in a soothing massage at our guesthouse, designed to relax your body and calm your mind. Our professional massage services help relieve tension, reduce stress, and promote overall well-being. Whether you seek a gentle, relaxing treatment or a deep tissue massage, our experienced therapists will tailor the session to your needs. Unwind in a serene environment, and let the healing hands of our specialists rejuvenate your muscles and restore balance to your day.',
     img: '/images/attractions/massage.jpg',
     slider: [
-      <img src='/images/massage/massage1.jpg' alt='Massage' />,
-      <img src='/images/massage/massage2.jpg' alt='Massage' />,
-      <img src='/images/massage/massage3.jpg' alt='Massage' />,
-      <img src='/images/massage/massage4.jpg' alt='Massage' />,
-      <img src='/images/massage/massage5.jpg' alt='Massage' />,
+      <img src='/images/massage/massage1.jpg' alt='Massage' loading='lazy' />,
+      <img src='/images/massage/massage2.jpg' alt='Massage' loading='lazy' />,
+      <img src='/images/massage/massage3.jpg' alt='Massage' loading='lazy' />,
+      <img src='/images/massage/massage4.jpg' alt='Massage' loading='lazy' />,
+      <img src='/images/massage/massage5.jpg' alt='Massage' loading='lazy' />,
     ],
   },
   {
