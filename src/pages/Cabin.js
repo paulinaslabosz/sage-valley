@@ -10,24 +10,25 @@ function Cabin() {
 
   return (
     <>
-      <h2>{currentCabin.title}</h2>
-      <div>
-        <div>
-          <div>
-            <div>
+      <h2 className='cabin_title'>{currentCabin.title}</h2>
+      <div className='cabin_wrapper'>
+        <div className='cabin_content'>
+          <div className='cabin_description'>
+            <div className='cabin_details'>
               <span>
-                <FontAwesomeIcon icon={faPerson} />
+                <FontAwesomeIcon icon={faPerson} className='cabin_icon' />
                 {currentCabin.details.people}
               </span>
               <span>
-                <FontAwesomeIcon icon={faBed} /> {currentCabin.details.beds}
+                <FontAwesomeIcon icon={faBed} className='cabin_icon' />{' '}
+                {currentCabin.details.beds}
               </span>
               <span>
-                <FontAwesomeIcon icon={faBath} />{' '}
+                <FontAwesomeIcon icon={faBath} className='cabin_icon' />{' '}
                 {currentCabin.details.bathrooms}
               </span>
             </div>
-            <div>
+            <div className='cabin_facilities'>
               <ul>
                 {currentCabin.facilities.map((el, index) => {
                   return <li key={index}>{el}</li>;
@@ -35,11 +36,11 @@ function Cabin() {
               </ul>
             </div>
           </div>
-          <div>
+          <div className='cabin_img'>
             <img src='' alt='' />
           </div>
         </div>
-        <div>GALERIA</div>
+        <div className='cabin_gallery'>GALERIA</div>
       </div>
     </>
   );
