@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cabin.scss';
 import { useParams } from 'react-router-dom';
 import { cabinData } from '../cabinData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,15 +17,15 @@ function Cabin() {
           <div className='cabin_description'>
             <div className='cabin_details'>
               <span>
-                <FontAwesomeIcon icon={faPerson} className='cabin_icon' />
+                <FontAwesomeIcon icon={faPerson} />
                 {currentCabin.details.people}
               </span>
               <span>
-                <FontAwesomeIcon icon={faBed} className='cabin_icon' />{' '}
+                <FontAwesomeIcon icon={faBed} />
                 {currentCabin.details.beds}
               </span>
               <span>
-                <FontAwesomeIcon icon={faBath} className='cabin_icon' />{' '}
+                <FontAwesomeIcon icon={faBath} />
                 {currentCabin.details.bathrooms}
               </span>
             </div>
