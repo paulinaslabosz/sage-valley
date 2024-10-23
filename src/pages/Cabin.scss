@@ -2,6 +2,8 @@
   &_content {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
   }
   &_details {
     display: flex;
@@ -11,6 +13,12 @@
       width: 5rem;
       font-size: 1.5rem;
       color: var(--sage);
+    }
+  }
+  &_img {
+    width: 50%;
+    img {
+      width: 100%;
     }
   }
 }
