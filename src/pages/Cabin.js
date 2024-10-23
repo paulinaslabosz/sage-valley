@@ -38,7 +38,7 @@ function Cabin() {
             </div>
           </div>
           <div className='cabin_img'>
-            <img src='' alt='' />
+            <img src={currentCabin.img} alt={currentCabin.title} />
           </div>
         </div>
         <div className='cabin_gallery'>GALERIA</div>

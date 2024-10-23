@@ -2,7 +2,7 @@ export const cabinData = [
   {
     name: 'bigCabin',
     title: 'Big Cabin',
-    // img: wstawić ścieżkę do zdjęcia
+    img: '/images/cabins/bigCabin.jpg',
     details: {
       people: '10-12',
       beds: '10',
@@ -26,7 +26,7 @@ export const cabinData = [
   {
     name: 'littleCabin',
     title: 'Little Cabin',
-    // img: wstawić ścieżkę do zdjęcia
+    img: '/images/cabins/littleCabin.jpg',
     details: {
       people: '4-6',
       beds: '4',
