@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/Cabins.scss';
+import { Link } from 'react-router-dom';
 import bigCabin from '../../../images/BigCabin.jpg';
 import littleCabin from '../../../images/LittleCabin.jpg';
 
@@ -11,13 +12,13 @@ function Cabins() {
         <div className='cabins_cabin'>
           <img src={bigCabin} alt='Big cabin' />
           <div>
-            <a href='#'>Big cabin</a>
+            <Link to='bigCabin'>Big cabin</Link>
           </div>
         </div>
         <div className='cabins_cabin'>
           <img src={littleCabin} alt='Little cabin' />
           <div>
-            <a href='#'>Little cabin</a>
+            <Link to='littleCabin'>Little cabin</Link>
           </div>
         </div>
       </div>
