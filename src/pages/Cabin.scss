@@ -1,4 +1,33 @@
+@keyframes textLineAnimation {
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
 .cabin {
+  &_title {
+    color: var(--sage);
+    font-size: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 90%;
+      transform: scaleX(1);
+      height: 1px;
+      bottom: 0;
+      animation: textLineAnimation 1.6s ease 0s 1 reverse none;
+      z-index: 9;
+      background-color: var(--sage);
+    }
+  }
   &_content {
     display: flex;
     flex-direction: row;
