@@ -12,21 +12,25 @@
   &_title {
     color: var(--sage);
     font-size: 2rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
-    &::after {
-      content: '';
+    margin-bottom: 0;
+    &-wrapper {
+      padding-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+    }
+    &-line {
       position: absolute;
-      width: 90%;
-      transform: scaleX(1);
+      width: 30%;
       height: 1px;
       bottom: 0;
-      animation: textLineAnimation 1.6s ease 0s 1 reverse none;
       z-index: 9;
       background-color: var(--sage);
     }
+  }
+  &_wrapper {
+    margin-top: 2rem;
   }
   &_content {
     display: flex;
@@ -77,4 +81,15 @@
       width: 100%;
     }
   }
+}
+
+// styles for react-transition-group
+
+.fade-enter {
+  transform: scale(0);
+}
+
+.fade-enter-active {
+  animation: textLineAnimation 1.6s ease 0s 1 reverse none;
+  transform: scaleX(1);
 }

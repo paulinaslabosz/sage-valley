@@ -11,7 +11,10 @@ function Cabin() {
 
   return (
     <>
-      <h2 className='cabin_title'>{currentCabin.title}</h2>
+      <div className='cabin_title-wrapper'>
+        <h2 className='cabin_title'>{currentCabin.title}</h2>
+        <div className='cabin_title-line fade'></div>
+      </div>
       <div className='cabin_wrapper'>
         <div className='cabin_content'>
           <div className='cabin_description'>
