@@ -1,20 +1,30 @@
-import React from 'react';
+import { React, useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
+
 import './Cabin.scss';
 import { useParams } from 'react-router-dom';
 import { cabinData } from '../cabinData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPerson, faBed, faBath } from '@fortawesome/free-solid-svg-icons';
 
-function Cabin() {
+function Cabin({ location }) {
   const { id } = useParams();
   const currentCabin = cabinData.find((element) => element.name === id);
-
+  const [showLine, setShowLine] = useState(true);
   return (
     <>
       <div className='cabin_title-wrapper'>
         <h2 className='cabin_title'>{currentCabin.title}</h2>
-        <div className='cabin_title-line fade'></div>
+        <CSSTransition
+          in={showLine}
+          key={location.key}
+          classNames='line-grow'
+          timeout={1600}
+        >
+          <div className='cabin_title-line line'></div>
+        </CSSTransition>
       </div>
+
       <div className='cabin_wrapper'>
         <div className='cabin_content'>
           <div className='cabin_description'>
