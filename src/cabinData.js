@@ -20,7 +20,40 @@ export const cabinData = [
       'air conditioning',
       'TV',
     ],
-    // gallery: linki do zdjęc - galeria
+    gallery: [
+      {
+        src: './images/cabins/bigCabin.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/food/food3.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/balia/bania2.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/green/green2.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/massage/massage1.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/sauna/sauna4.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/attractions/sauna.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/food/food2.jpg',
+        alt: 'little Cabin',
+      },
+    ],
   },
 
   {
@@ -40,6 +73,39 @@ export const cabinData = [
       'hair dryer',
       'air conditioning',
     ],
-    // gallery: linki do zdjęc - galeria
+    gallery: [
+      {
+        src: './images/cabins/littleCabin.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/food/food2.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/balia/bania5.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/green/green6.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/massage/massage5.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/sauna/sauna5.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/attractions/hottub.jpg',
+        alt: 'little Cabin',
+      },
+      {
+        src: './images/food/food1.jpg',
+        alt: 'little Cabin',
+      },
+    ],
   },
 ];
