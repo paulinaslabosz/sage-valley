@@ -5,7 +5,12 @@ import './Cabin.scss';
 import { useParams } from 'react-router-dom';
 import { cabinData } from '../cabinData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPerson, faBed, faBath } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPerson,
+  faBed,
+  faBath,
+  faPlay,
+} from '@fortawesome/free-solid-svg-icons';
 
 function Cabin({ location }) {
   const { id } = useParams();
@@ -45,7 +50,11 @@ function Cabin({ location }) {
             <div className='cabin_facilities'>
               <ul>
                 {currentCabin.facilities.map((el, index) => {
-                  return <li key={index}>{el}</li>;
+                  return (
+                    <li key={index}>
+                      <FontAwesomeIcon icon={faPlay} /> {el}
+                    </li>
+                  );
                 })}
               </ul>
             </div>
