@@ -63,7 +63,17 @@ function Cabin({ location }) {
             <img src={currentCabin.img} alt={currentCabin.title} />
           </div>
         </div>
-        <div className='cabin_gallery'>GALERIA</div>
+        <div className='cabin_gallery'>
+          <h3 className='cabin_gallery-title'>Gallery</h3>
+          <CSSTransition
+            in={showLine}
+            key={location.key}
+            classNames='line-grow'
+            timeout={1600}
+          >
+            <div className='cabin_gallery-line line'></div>
+          </CSSTransition>
+        </div>
       </div>
     </>
   );
