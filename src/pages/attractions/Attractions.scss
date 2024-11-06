@@ -1,13 +1,12 @@
 .atr {
   &_wrapper {
-    width: 70%;
+    width: 80rem;
     margin-top: 1rem;
     margin: auto;
   }
   &_nav {
     list-style: none;
     display: flex;
-    // font-size: 1.2rem;
     margin-bottom: 0;
   }
   &_navlink {
@@ -35,8 +34,6 @@
   &_content {
     margin-top: 0;
     padding: 2rem;
-    width: 100%;
-    min-height: 40rem;
     box-shadow: 0px 9px 14px -4px var(--darkGreen);
     border-radius: 30px;
     background-color: var(--lightSage);

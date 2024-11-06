@@ -9,6 +9,7 @@
 }
 
 .cabin {
+  width: 100%;
   &_animate {
     display: flex;
     justify-content: center;
@@ -47,7 +48,7 @@
   &_content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 70%;
     padding: 2rem;
     background-color: var(--lightSage);

@@ -17,7 +17,7 @@ function Cabin({ location }) {
   const currentCabin = cabinData.find((element) => element.name === id);
   const [showLine, setShowLine] = useState(true);
   return (
-    <>
+    <div className='cabin'>
       <div className='cabin_title-wrapper'>
         <h2 className='cabin_title'>{currentCabin.title}</h2>
         <CSSTransition
@@ -75,7 +75,7 @@ function Cabin({ location }) {
           </CSSTransition>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
