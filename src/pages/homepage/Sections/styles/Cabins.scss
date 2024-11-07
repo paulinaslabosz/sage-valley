@@ -1,7 +1,10 @@
 .cabins {
   &_wrapper {
     h1 {
+      background-color: var(--rose);
+      color: var(--darkGreen);
       text-align: center;
+      padding: 1rem;
     }
   }
   &_content {
