@@ -35,7 +35,7 @@
     font-size: 1.7rem;
     padding-bottom: 1rem;
     position: relative;
-    color: var(--darkGreen);
+    color: var(--sage);
     display: flex;
     justify-content: center;
     &::after {
@@ -47,7 +47,7 @@
       bottom: 0;
       animation: textLineAnimation 2s ease 0s 1 reverse none;
       z-index: 9;
-      background-color: var(--darkGreen);
+      background-color: var(--sage);
     }
   }
   &_corousel {
