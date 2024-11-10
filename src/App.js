@@ -5,7 +5,7 @@ import { TransitionGroup } from 'react-transition-group';
 import Nav from './layout/Nav';
 import Homepage from './pages/homepage/Homepage.js';
 import Contact from './pages/Contact.js';
-import Cabin from './pages/Cabin.js';
+import Cabin from './pages/Cabin/Cabin.js';
 import Attractions from './pages//attractions/Attractions.js';
 function App() {
   const location = useLocation();

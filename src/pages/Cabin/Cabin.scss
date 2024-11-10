@@ -93,14 +93,18 @@
   }
 
   &_gallery {
-    position: relative;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     &-title {
       color: var(--lightSage);
       font-size: 2rem;
       margin-bottom: 1rem;
+    }
+    &-titleWrapper {
+      position: relative;
+      width: 100%;
     }
     &-line {
       position: absolute;

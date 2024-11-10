@@ -1,9 +1,11 @@
 import { React, useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
 
 import './Cabin.scss';
+import Lightbox from './Lightbox.js';
+import { CSSTransition } from 'react-transition-group';
+
 import { useParams } from 'react-router-dom';
-import { cabinData } from '../cabinData';
+import { cabinData } from '../../cabinData.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPerson,
@@ -64,15 +66,7 @@ function Cabin({ location }) {
           </div>
         </div>
         <div className='cabin_gallery'>
-          <h3 className='cabin_gallery-title'>Gallery</h3>
-          <CSSTransition
-            in={showLine}
-            key={location.key}
-            classNames='line-grow'
-            timeout={1600}
-          >
-            <div className='cabin_gallery-line line'></div>
-          </CSSTransition>
+          <Lightbox location={location} />
         </div>
       </div>
     </div>

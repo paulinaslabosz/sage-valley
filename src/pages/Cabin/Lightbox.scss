@@ -1,0 +1,29 @@
+.lightbox {
+  &_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_title {
+    position: relative;
+    width: 100%;
+    color: var(--lightSage);
+    display: flex;
+    justify-content: center;
+    &-text {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    &-line {
+      position: absolute;
+      width: 30%;
+      height: 1px;
+      bottom: 0;
+      z-index: 9;
+      background-color: var(--lightSage);
+      transform-origin: center;
+      margin-top: 1rem;
+    }
+  }
+}
