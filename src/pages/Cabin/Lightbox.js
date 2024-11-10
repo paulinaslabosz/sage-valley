@@ -32,6 +32,30 @@ function Lightbox({ location, images }) {
   const hideLightbox = () => {
     setLightboxDisplay(false);
   };
+
+  const showNext = (e) => {
+    e.stopPropagation();
+    let currentIndex = images.map((image) => image.src).indexOf(imageToShow);
+    if (currentIndex >= images.length - 1) {
+      const firstImage = images[0].src;
+      setImageToShow(firstImage);
+    } else {
+      let nextImage = images[currentIndex + 1].src;
+      setImageToShow(nextImage);
+    }
+  };
+
+  const showPrev = (e) => {
+    e.stopPropagation();
+    let currentIndex = images.map((image) => image.src).indexOf(imageToShow);
+    if (currentIndex <= 0) {
+      const lastImage = images[images.length - 1].src;
+      setImageToShow(lastImage);
+    } else {
+      const prevImage = images[currentIndex - 1].src;
+      setImageToShow(prevImage);
+    }
+  };
   return (
     <div className='gallery_wrapper'>
       <div className='gallery_title'>
@@ -48,10 +72,10 @@ function Lightbox({ location, images }) {
       <div className='gallery_list'>{gallery}</div>
       {lightboxDisplay ? (
         <div className='lightbox' onClick={() => hideLightbox()}>
-          <FontAwesomeIcon icon={faCircleChevronLeft} />
+          <FontAwesomeIcon icon={faCircleChevronLeft} onClick={showPrev} />
 
           <img className='lightbox_img' src={imageToShow} />
-          <FontAwesomeIcon icon={faCircleChevronRight} />
+          <FontAwesomeIcon icon={faCircleChevronRight} onClick={showNext} />
         </div>
       ) : (
         ''
