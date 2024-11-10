@@ -66,7 +66,7 @@ function Cabin({ location }) {
           </div>
         </div>
         <div className='cabin_gallery'>
-          <Lightbox location={location} />
+          <Lightbox location={location} images={currentCabin.gallery || []} />
         </div>
       </div>
     </div>

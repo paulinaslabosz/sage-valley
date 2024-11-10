@@ -2,8 +2,14 @@ import { React, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import './Lightbox.scss';
-function Lightbox({ location }) {
+function Lightbox({ location, images }) {
   const [showLine, setShowLine] = useState(true);
+
+  const gallery = images.map((image) => (
+    <div className='lightbox_gallery-image'>
+      <img src={image.src} alt={image.alt} />
+    </div>
+  ));
 
   return (
     <div className='lightbox_wrapper'>
@@ -18,14 +24,7 @@ function Lightbox({ location }) {
           <div className='lightbox_title-line line'></div>
         </CSSTransition>
       </div>
-      <ul>
-        <li>element</li>
-        <li>element</li>
-        <li>element</li>
-        <li>element</li>
-        <li>element</li>
-        <li>element</li>
-      </ul>
+      <div className='lightbox_gallery'>{gallery}</div>
     </div>
   );
 }
