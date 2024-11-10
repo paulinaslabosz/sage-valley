@@ -1,4 +1,4 @@
-.lightbox {
+.gallery {
   &_wrapper {
     width: 100%;
     display: flex;
@@ -26,7 +26,7 @@
       margin-top: 1rem;
     }
   }
-  &_gallery {
+  &_list {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
