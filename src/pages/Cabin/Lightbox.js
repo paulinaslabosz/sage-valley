@@ -3,14 +3,21 @@ import { CSSTransition } from 'react-transition-group';
 
 import './Lightbox.scss';
 function Lightbox({ location, images }) {
+  //for transition
   const [showLine, setShowLine] = useState(true);
+  //for lightbox
+  const [lightboxDisplay, setLightboxDisplay] = useState(false);
+  const [imageToShow, setImageToShow] = useState('');
 
   const gallery = images.map((image) => (
     <div className='gallery_list-image'>
-      <img src={image.src} alt={image.alt} />
+      <img src={image.src} alt={image.alt} onClick={() => showLightbox()} />
     </div>
   ));
 
+  const showLightbox = () => {
+    setLightboxDisplay(true);
+  };
   return (
     <div className='gallery_wrapper'>
       <div className='gallery_title'>
@@ -25,6 +32,7 @@ function Lightbox({ location, images }) {
         </CSSTransition>
       </div>
       <div className='gallery_list'>{gallery}</div>
+      {lightboxDisplay ? <div className='lightbox'></div> : ''}
     </div>
   );
 }
