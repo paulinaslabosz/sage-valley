@@ -11,7 +11,7 @@ import {
   faPerson,
   faBed,
   faBath,
-  faPlay,
+  faCaretRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 function Cabin({ location }) {
@@ -54,7 +54,7 @@ function Cabin({ location }) {
                 {currentCabin.facilities.map((el, index) => {
                   return (
                     <li key={index}>
-                      <FontAwesomeIcon icon={faPlay} /> {el}
+                      <FontAwesomeIcon icon={faCaretRight} /> {el}
                     </li>
                   );
                 })}
