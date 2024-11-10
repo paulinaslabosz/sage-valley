@@ -1,6 +1,11 @@
 import { React, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import {
+  faCircleChevronRight,
+  faCircleChevronLeft,
+} from '@fortawesome/free-solid-svg-icons';
 import './Lightbox.scss';
 function Lightbox({ location, images }) {
   //for transition
@@ -11,12 +16,17 @@ function Lightbox({ location, images }) {
 
   const gallery = images.map((image) => (
     <div className='gallery_list-image'>
-      <img src={image.src} alt={image.alt} onClick={() => showLightbox()} />
+      <img
+        src={image.src}
+        alt={image.alt}
+        onClick={() => showLightbox(image.src)}
+      />
     </div>
   ));
 
-  const showLightbox = () => {
+  const showLightbox = (image) => {
     setLightboxDisplay(true);
+    setImageToShow(image);
   };
 
   const hideLightbox = () => {
@@ -37,7 +47,12 @@ function Lightbox({ location, images }) {
       </div>
       <div className='gallery_list'>{gallery}</div>
       {lightboxDisplay ? (
-        <div className='lightbox' onClick={() => hideLightbox()}></div>
+        <div className='lightbox' onClick={() => hideLightbox()}>
+          <FontAwesomeIcon icon={faCircleChevronLeft} />
+
+          <img className='lightbox_img' src={imageToShow} />
+          <FontAwesomeIcon icon={faCircleChevronRight} />
+        </div>
       ) : (
         ''
       )}
