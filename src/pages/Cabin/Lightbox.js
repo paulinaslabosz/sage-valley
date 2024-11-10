@@ -18,6 +18,10 @@ function Lightbox({ location, images }) {
   const showLightbox = () => {
     setLightboxDisplay(true);
   };
+
+  const hideLightbox = () => {
+    setLightboxDisplay(false);
+  };
   return (
     <div className='gallery_wrapper'>
       <div className='gallery_title'>
@@ -32,7 +36,11 @@ function Lightbox({ location, images }) {
         </CSSTransition>
       </div>
       <div className='gallery_list'>{gallery}</div>
-      {lightboxDisplay ? <div className='lightbox'></div> : ''}
+      {lightboxDisplay ? (
+        <div className='lightbox' onClick={() => hideLightbox()}></div>
+      ) : (
+        ''
+      )}
     </div>
   );
 }
