@@ -19,7 +19,7 @@ function Nav() {
           <NavLink to='littleCabin'>Little Cabin</NavLink>
         </li>
         <li>
-          <NavLink to='attractions'>Attractions</NavLink>
+          <NavLink to='attractions/tub'>Attractions</NavLink>
         </li>
         <li>
           <NavLink to='contact'>Contact</NavLink>

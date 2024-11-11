@@ -6,7 +6,6 @@ import Slider from './Slider';
 function Section({ data }) {
   const { id } = useParams();
   const currentSection = data.find((element) => element.name === id);
-
   return (
     <>
       <div className='section_wrapper'>
