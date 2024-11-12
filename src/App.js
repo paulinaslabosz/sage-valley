@@ -6,6 +6,7 @@ import Homepage from './pages/homepage/Homepage.js';
 import Contact from './pages/Contact.js';
 import Cabin from './pages/Cabin/Cabin.js';
 import Attractions from './pages//attractions/Attractions.js';
+import Footer from './layout/Footer.js';
 function App() {
   const location = useLocation();
 
@@ -25,7 +26,9 @@ function App() {
           </Routes>
         </TransitionGroup>
       </main>
-      <footer>footer</footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
