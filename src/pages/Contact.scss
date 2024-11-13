@@ -67,3 +67,41 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .contact {
+    &_wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 3rem;
+      div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      ul {
+        padding-top: 0;
+      }
+    }
+    &_socials {
+      padding-bottom: 3rem;
+    }
+    &_imgWrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .contact {
+    &_wrapper {
+      div {
+        ul {
+          li {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
