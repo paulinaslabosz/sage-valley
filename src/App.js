@@ -12,9 +12,7 @@ function App() {
 
   return (
     <div className='App'>
-      <nav>
-        <Nav />
-      </nav>
+      <nav>{/* <Nav /> */}</nav>
 
       <main>
         <TransitionGroup>
