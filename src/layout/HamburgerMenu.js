@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import './styles/HamburgerMenu.scss';
 function HamburgerMenu() {
   return (
     <div className='ham'>
-      <ul className='nav_list'>
+      <ul className='ham_list'>
         <li>
           <NavLink to='/'>Start</NavLink>
         </li>
@@ -26,4 +26,4 @@ function HamburgerMenu() {
   );
 }
 
-export default HamburgerManu;
+export default HamburgerMenu;
