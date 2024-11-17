@@ -5,6 +5,7 @@
     background-color: white;
     position: relative;
     top: 7rem;
+    width: 10rem;
     li {
       font-weight: bold;
       padding: 1rem 0;
@@ -16,4 +17,12 @@
       }
     }
   }
+}
+.fa-bars {
+  position: absolute;
+  right: 0;
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: var(--sage);
+  z-index: 9;
 }

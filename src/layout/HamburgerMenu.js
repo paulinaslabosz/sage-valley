@@ -1,9 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './styles/HamburgerMenu.scss';
 function HamburgerMenu() {
   return (
-    <div className='ham'>
+    <>
+      <FontAwesomeIcon icon={faBars} />
       <ul className='ham_list'>
         <li>
           <NavLink to='/'>Start</NavLink>
@@ -22,7 +25,7 @@ function HamburgerMenu() {
           <NavLink to='contact'>Contact</NavLink>
         </li>
       </ul>
-    </div>
+    </>
   );
 }
 
