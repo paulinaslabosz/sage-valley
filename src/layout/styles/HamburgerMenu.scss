@@ -4,14 +4,15 @@
     padding: 1rem;
     background-color: white;
     position: relative;
-    top: 4rem;
+    top: 7rem;
     li {
       font-weight: bold;
       padding: 1rem 0;
       a {
         text-decoration: none;
         color: black;
-        padding: 1rem 1rem;
+        padding: 0.5rem 1rem;
+        position: relative;
       }
     }
   }
