@@ -49,3 +49,9 @@
     background-color: black;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav_list {
+    display: none;
+  }
+}

@@ -1,17 +1,17 @@
-.ham {
-  &_list {
-    list-style: none;
-    padding: 0.2rem 1rem;
-    background-color: white;
-    position: fixed;
-    margin: 0;
-    top: 0;
-    width: 8rem;
-    right: 0;
-    transition: right 0.5s;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.29);
+.ham_list {
+  display: none;
+  &-hide {
+    display: none;
+  }
+}
+.fa-bars {
+  display: none;
+}
 
-    &-hide {
+@media screen and (max-width: 768px) {
+  .ham {
+    &_list {
+      display: block;
       list-style: none;
       padding: 0.2rem 1rem;
       background-color: white;
@@ -19,26 +19,41 @@
       margin: 0;
       top: 0;
       width: 8rem;
-      right: -10rem;
+      right: 0;
       transition: right 0.5s;
-    }
-    &-el {
-      font-weight: bold;
-      padding: 1rem 0;
-      a {
-        text-decoration: none;
-        color: black;
-        padding: 0.5rem 1rem;
-        position: relative;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.29);
+
+      &-hide {
+        display: block;
+        list-style: none;
+        padding: 0.2rem 1rem;
+        background-color: white;
+        position: fixed;
+        margin: 0;
+        top: 0;
+        width: 8rem;
+        right: -10rem;
+        transition: right 0.5s;
+      }
+      &-el {
+        font-weight: bold;
+        padding: 1rem 0;
+        a {
+          text-decoration: none;
+          color: black;
+          padding: 0.5rem 1rem;
+          position: relative;
+        }
       }
     }
   }
-}
-.fa-bars {
-  position: absolute;
-  right: 0;
-  font-size: 2rem;
-  padding-right: 1.5rem;
-  color: var(--sage);
-  z-index: 9;
+  .fa-bars {
+    display: block;
+    position: absolute;
+    right: 0;
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    color: var(--sage);
+    z-index: 9;
+  }
 }

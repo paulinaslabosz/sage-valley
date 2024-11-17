@@ -8,7 +8,7 @@ function Nav() {
   return (
     <>
       <img className='nav_img' src={logo} alt='Text Sage Valley' />
-      {/* <Menu /> */}
+      <Menu />
       <HamburgerMenu />
     </>
   );
