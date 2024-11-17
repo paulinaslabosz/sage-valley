@@ -45,3 +45,44 @@
     }
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1140px) {
+  .cabins {
+    &_wrapper {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    &_cabin {
+      div {
+        height: 30%;
+      }
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cabins {
+    &_wrapper {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+    &_content {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+    }
+    &_cabin {
+      width: 100%;
+      div {
+        height: 30%;
+      }
+      a {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+      }
+    }
+  }
+}
