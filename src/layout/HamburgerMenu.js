@@ -1,20 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './styles/HamburgerMenu.scss';
 function HamburgerMenu() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const ref = useRef(null);
 
   const handleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
-  console.log(isMenuOpen);
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (!ref.current?.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+    window.addEventListener('mousedown', handleOutsideClick);
+    return () => {
+      window.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [ref]);
   return (
     <>
       <FontAwesomeIcon icon={faBars} onClick={() => handleMenu()} />
-      <ul className={isMenuOpen ? 'ham_list' : 'ham_list-hide'}>
+      <ul className={isMenuOpen ? 'ham_list' : 'ham_list-hide'} ref={ref}>
         <li className='ham_list-el'>
           <NavLink to='/'>Start</NavLink>
         </li>

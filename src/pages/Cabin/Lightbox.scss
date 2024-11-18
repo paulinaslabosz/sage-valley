@@ -27,13 +27,12 @@
     }
   }
   &_list {
-    width: 70%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    justify-items: center;
+    width: 100%;
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 2rem 4rem;
     &-image {
       width: 10rem;

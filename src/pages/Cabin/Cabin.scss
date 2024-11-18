@@ -9,7 +9,7 @@
 }
 
 .cabin {
-  width: 100%;
+  width: 100vw;
   &_animate {
     display: flex;
     justify-content: center;
@@ -38,6 +38,7 @@
     }
   }
   &_wrapper {
+    width: 100%;
     padding: 2rem;
     margin-top: 2rem;
     background-color: var(--sage);
