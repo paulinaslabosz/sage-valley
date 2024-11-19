@@ -12,6 +12,7 @@
   &_wrapper {
     width: 100%;
     display: flex;
+    align-items: center;
   }
   &_img {
     width: 50%;
@@ -56,5 +57,44 @@
     height: 15rem;
     margin: 1rem 0;
     padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .section {
+    &_corousel {
+      height: 12rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    &_corousel {
+      height: 9rem;
+    }
+    &_title {
+      font-size: 1.4rem;
+    }
+    &_content {
+      padding: 0 1rem;
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .section {
+    &_wrapper {
+      flex-direction: column;
+    }
+    &_img {
+      width: 100%;
+    }
+    &_content {
+      width: 100%;
+    }
   }
 }

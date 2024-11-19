@@ -39,3 +39,23 @@
     background-color: var(--lightSage);
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .atr {
+    &_wrapper {
+      width: 100vw;
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .atr {
+    &_nav {
+      flex-wrap: wrap;
+    }
+    &_navlink {
+      font-size: 0.9rem;
+      letter-spacing: normal;
+    }
+  }
+}
