@@ -59,3 +59,15 @@
     }
   }
 }
+
+@media screen and (max-width: 520px) {
+  .atr {
+    &_nav {
+      padding: 0 1.3rem;
+      a {
+        font-size: clamp(0.55rem, 3vw, 2rem);
+        padding: 0.5rem;
+      }
+    }
+  }
+}
