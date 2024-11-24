@@ -7,11 +7,13 @@ import Contact from './pages/Contact.js';
 import Cabin from './pages/Cabin/Cabin.js';
 import Attractions from './pages//attractions/Attractions.js';
 import Footer from './layout/Footer.js';
+import ScrollToTop from './layout/ScrollToTop.js';
 function App() {
   const location = useLocation();
 
   return (
     <div className='App'>
+      <ScrollToTop />
       <nav>
         <Nav />
       </nav>
