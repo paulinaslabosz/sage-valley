@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sage-valley/static/css/main.bc7230c2.css",
+    "main.js": "/sage-valley/static/js/main.9245f4fd.js",
+    "static/js/453.d0fe73c1.chunk.js": "/sage-valley/static/js/453.d0fe73c1.chunk.js",
+    "static/media/headerVideo.mp4": "/sage-valley/static/media/headerVideo.b60ff95f351d53722134.mp4",
+    "static/media/contact.jpeg": "/sage-valley/static/media/contact.bc7254f65fdcf6b7bd12.jpeg",
+    "static/media/LittleCabin.jpg": "/sage-valley/static/media/LittleCabin.b068dd343f4c6f34d74c.jpg",
+    "static/media/BigCabin.jpg": "/sage-valley/static/media/BigCabin.ed45359e57431457ce26.jpg",
+    "static/media/intimacy.jpg": "/sage-valley/static/media/intimacy.65393e0a2d43aa07ac73.jpg",
+    "static/media/peace.jpg": "/sage-valley/static/media/peace.7a56f81fc4bcebe13c8f.jpg",
+    "static/media/instagramIcon.png": "/sage-valley/static/media/instagramIcon.bf12a052095f92329adb.png",
+    "static/media/logo.png": "/sage-valley/static/media/logo.e3c291b484d0c077c4b9.png",
+    "index.html": "/sage-valley/index.html",
+    "main.bc7230c2.css.map": "/sage-valley/static/css/main.bc7230c2.css.map",
+    "main.9245f4fd.js.map": "/sage-valley/static/js/main.9245f4fd.js.map",
+    "453.d0fe73c1.chunk.js.map": "/sage-valley/static/js/453.d0fe73c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc7230c2.css",
+    "static/js/main.9245f4fd.js"
+  ]
+}
