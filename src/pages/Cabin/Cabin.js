@@ -17,7 +17,7 @@ function Cabin({ location }) {
   const { id } = useParams();
   const [showLine, setShowLine] = useState(true);
 
-  fetch('/data/cabinData.json')
+  fetch(`${process.env.PUBLIC_URL}/data/cabinData.json`)
     .then((response) => {
       if (!response.ok) {
         console.error(`Błąd HTTP: ${response.status}`);
