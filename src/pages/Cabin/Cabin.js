@@ -5,7 +5,6 @@ import Lightbox from './Lightbox.js';
 import { CSSTransition } from 'react-transition-group';
 
 import { useParams } from 'react-router-dom';
-import { cabinData } from '../../cabinData.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPerson,
@@ -16,12 +15,24 @@ import {
 
 function Cabin({ location }) {
   const { id } = useParams();
-  const currentCabin = cabinData.find((element) => element.name === id);
   const [showLine, setShowLine] = useState(true);
+
+  fetch('/data/cabinData.json')
+    .then((response) => {
+      if (!response.ok) {
+        console.error(`Błąd HTTP: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => console.log(data))
+    .catch((error) => console.log(`Błąd: ${error}`));
+
+  // const currentCabin = cabinData.find((element) => element.name === id);
+
   return (
     <div className='cabin'>
       <div className='cabin_title-wrapper'>
-        <h2 className='cabin_title'>{currentCabin.title}</h2>
+        {/* <h2 className='cabin_title'>{currentCabin.title}</h2> */}
         <CSSTransition
           in={showLine}
           key={location.key}
@@ -38,35 +49,35 @@ function Cabin({ location }) {
             <div className='cabin_details'>
               <span>
                 <FontAwesomeIcon icon={faPerson} />
-                {currentCabin.details.people}
+                {/* {currentCabin.details.people} */}
               </span>
               <span>
                 <FontAwesomeIcon icon={faBed} />
-                {currentCabin.details.beds}
+                {/* {currentCabin.details.beds} */}
               </span>
               <span>
                 <FontAwesomeIcon icon={faBath} />
-                {currentCabin.details.bathrooms}
+                {/* {currentCabin.details.bathrooms} */}
               </span>
             </div>
             <div className='cabin_facilities'>
               <ul>
-                {currentCabin.facilities.map((el, index) => {
+                {/* {currentCabin.facilities.map((el, index) => {
                   return (
                     <li key={index}>
                       <FontAwesomeIcon icon={faCaretRight} /> {el}
                     </li>
                   );
-                })}
+                })} */}
               </ul>
             </div>
           </div>
           <div className='cabin_img'>
-            <img src={currentCabin.img} alt={currentCabin.title} />
+            {/* <img src={currentCabin.img} alt={currentCabin.title} /> */}
           </div>
         </div>
         <div className='cabin_gallery'>
-          <Lightbox location={location} images={currentCabin.gallery || []} />
+          {/* <Lightbox location={location} images={currentCabin.gallery || []} /> */}
         </div>
       </div>
     </div>
