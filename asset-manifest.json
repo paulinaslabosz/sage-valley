@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sage-valley/static/css/main.bc7230c2.css",
-    "main.js": "/sage-valley/static/js/main.4611afbe.js",
+    "main.js": "/sage-valley/static/js/main.78c63d4f.js",
     "static/js/453.d0fe73c1.chunk.js": "/sage-valley/static/js/453.d0fe73c1.chunk.js",
     "static/media/headerVideo.mp4": "/sage-valley/static/media/headerVideo.b60ff95f351d53722134.mp4",
     "static/media/contact.jpeg": "/sage-valley/static/media/contact.bc7254f65fdcf6b7bd12.jpeg",
@@ -13,11 +13,11 @@
     "static/media/logo.png": "/sage-valley/static/media/logo.e3c291b484d0c077c4b9.png",
     "index.html": "/sage-valley/index.html",
     "main.bc7230c2.css.map": "/sage-valley/static/css/main.bc7230c2.css.map",
-    "main.4611afbe.js.map": "/sage-valley/static/js/main.4611afbe.js.map",
+    "main.78c63d4f.js.map": "/sage-valley/static/js/main.78c63d4f.js.map",
     "453.d0fe73c1.chunk.js.map": "/sage-valley/static/js/453.d0fe73c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc7230c2.css",
-    "static/js/main.4611afbe.js"
+    "static/js/main.78c63d4f.js"
   ]
 }
