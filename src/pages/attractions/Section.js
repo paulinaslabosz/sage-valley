@@ -10,7 +10,10 @@ function Section({ data }) {
     <>
       <div className='section_wrapper'>
         <div className='section_img'>
-          <img src={currentSection.img} alt='Girl in hot tub' />
+          <img
+            src={`${process.env.PUBLIC_URL}${currentSection.img}`}
+            alt='Girl in hot tub'
+          />
         </div>
         <div className='section_content'>
           <h3 className='section_title'>{currentSection.title}</h3>
