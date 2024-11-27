@@ -1,14 +1,30 @@
 # Sage Valley - Cabin Website
 
-This is a sample webpage for holiday cottages, using Sage Valley as an example created for the purpose of this project.
+A modern and user-friendly landing page for holiday cottages, using Sage Valley as an example created for the purpose of this project.
 
 The layout of the page was created according to my design, the photos are sourced from the following websites:
 
+_<https://www.vecteezy.com/>_
+_<https://pixabay.com/photos/whirlpool-hot-tub-garden-summer-1580294/>_
+_<https://unsplash.com/photos/a-person-in-a-hot-tub-D7BCGqzQ3Nk>_
+
 the video is sourced from the website:
 
-Technologies and libraries used in the project: **React.js, ReactRouter, SCSS, Webpack, Node.js**.
+_<https://artlist.io/stock-footage/clip/drone-austria-stream-calm/6295315>_
+
+- **React**: For building a responsive and interactive UI.
+- **React Router**: For implementing navigation and multi-page functionality.
+- **SCSS**: For styling and ensuring a polished, user-friendly design.
+- **JavaScript (ES6)**: For functionality and component logic.
+- **Webpack**
 
 ---
+
+## Possible Enhancements
+
+**Dynamic Conten**: Integrate with a backend to fetch real-time data for cottages, galleries, and attractions.
+**Booking System**: Add functionality for users to book cottages directly from the site.
+**Multilingual Support**: Enable language selection for international users.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
