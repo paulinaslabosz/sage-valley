@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Content.scss';
-import intimacyImg from '../../../images/intimacy.jpg';
-import peaceImg from '../../../images/peace.jpg';
+import intimacyImg from '../../../images/intimacy.webp';
+import peaceImg from '../../../images/peace.webp';
 function Content() {
   return (
     <div className='content_wrapper'>

@@ -2,7 +2,7 @@
   {
     "name": "bigCabin",
     "title": "Big Cabin",
-    "img": "/images/cabins/bigCabin.jpg",
+    "img": "/images/cabins/bigCabin.webp",
     "details": {
       "people": "10-12",
       "beds": "10",
@@ -22,35 +22,35 @@
     ],
     "gallery": [
       {
-        "src": "./images/cabins/bigCabin.jpg",
+        "src": "./images/cabins/bigCabin.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/food/food3.jpg",
+        "src": "./images/food/food3.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/balia/bania2.jpg",
+        "src": "./images/balia/bania2.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/green/green2.jpg",
+        "src": "./images/green/green2.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/massage/massage1.jpg",
+        "src": "./images/massage/massage1.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/sauna/sauna4.jpg",
+        "src": "./images/sauna/sauna4.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/attractions/sauna.jpg",
+        "src": "./images/attractions/sauna.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/food/food2.jpg",
+        "src": "./images/food/food2.webp",
         "alt": "little Cabin"
       }
     ]
@@ -59,7 +59,7 @@
   {
     "name": "littleCabin",
     "title": "Little Cabin",
-    "img": "/images/cabins/littleCabin.jpg",
+    "img": "/images/cabins/littleCabin.webp",
     "details": {
       "people": "4-6",
       "beds": "4",
@@ -75,35 +75,35 @@
     ],
     "gallery": [
       {
-        "src": "./images/cabins/littleCabin.jpg",
+        "src": "./images/cabins/littleCabin.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/food/food2.jpg",
+        "src": "./images/food/food2.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/balia/bania5.jpg",
+        "src": "./images/balia/bania5.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/green/green6.jpg",
+        "src": "./images/green/green6.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/massage/massage5.jpg",
+        "src": "./images/massage/massage5.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/sauna/sauna5.jpg",
+        "src": "./images/sauna/sauna5.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/attractions/hottub.jpg",
+        "src": "./images/attractions/hottub.webp",
         "alt": "little Cabin"
       },
       {
-        "src": "./images/food/food1.jpg",
+        "src": "./images/food/food1.webp",
         "alt": "little Cabin"
       }
     ]

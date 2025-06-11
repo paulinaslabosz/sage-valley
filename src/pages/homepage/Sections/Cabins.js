@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/Cabins.scss';
 import { Link } from 'react-router-dom';
-import bigCabin from '../../../images/BigCabin.jpg';
-import littleCabin from '../../../images/LittleCabin.jpg';
+import bigCabin from '../../../images/BigCabin.webp';
+import littleCabin from '../../../images/LittleCabin.webp';
 
 function Cabins() {
   return (

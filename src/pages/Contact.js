@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.scss';
-import contactImg from '../images/contact.jpeg';
+import contactImg from '../images/contact.webp';
 import fbIcon from '../images/socials/facebookIcon.png';
 import igIcon from '../images/socials/instagramIcon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
